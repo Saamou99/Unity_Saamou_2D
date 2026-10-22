@@ -18,14 +18,14 @@ public class ScreenColorController : MonoBehaviour
 
     [Header("Flow Animation Indstillinger")]
     [Tooltip("Hvor mange sekunder det tager at glide fra én farve til den næste")]
-    public float transitionDuration = 8f;
+    public float transitionDuration = 20f;
 
-    [Range(0.15f, 0.5f)]
+    [Range(0.15f, 1f)]
     [Tooltip("Mindste lysstyrke så skærmen aldrig bliver helt slukket")]
-    public float minBrightness = 0.2f;
+    public float minBrightness = 0.5f;
 
     [Header("Slider Animation")]
-    public float idleFadeTime = 3f; // Sekunder før slideren dæmpes automatisk
+    public float idleFadeTime = 2f; // Sekunder før slideren dæmpes automatisk
 
     private int currentColorIndex = 0;
     private int nextColorIndex = 1;
